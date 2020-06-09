@@ -190,10 +190,10 @@ The configuration parameters in this section control the resources requested and
 | `nodeport.servicePort`           | The Port broker will advertise to external producers and consumers.                                                                                                                                       | `19092` |
 | `nodeport.firstListenerPort`     | The first NodePort that Kafka Broker will use for advertising to external producers and consumers. For each broker, advertise.listeners port for external will be set to `31090 + {index of broker pod}`. | `31090` |
 | `loadBalancer.enabled`           | Whether or not to allow access to kafka cluster from outside k8s through loadBalancer.                                                                                                                    | `false` |
-| `loadBalancer.servicePort`       | The Port broker will advertise to external producers and consumers.                                                                                                                                       | `19092` |
+| `loadBalancer.servicePort`       | The port broker will advertise to external producers and consumers.                                                                                                                                       | `19092` |
 | `loadBalancer.internal`          | Is the loadbalancer internal-only?                                                                                                                                                                        | `true`  |
 | `loadBalancer.subnet`            | Specify a specific subnet.                                                                                                                                                                                | `""`    |
-| `loadBalancer.firstListenerPort` | The first NodePort that Kafka Broker will use for advertising to external producers and consumers. For each broker, advertise.listeners port for external will be set to `31090 + {index of broker pod}`. | `31090` |
+| `loadBalancer.firstListenerPort` | The first port that Kafka Broker will use for advertising to external producers and consumers. For each broker, advertise.listeners port for external will be set to `31090 + {index of broker pod}`.     | `31090` |
 
 ### Deployment Topology
 
